@@ -3,7 +3,7 @@
 
 title: Servus Hotel
 url: "https://vestalux.github.io"
-baseurl: "/servus-hotel"
+baseurl: "/servus-hotel/"
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
