@@ -31,7 +31,7 @@
 {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
 {% for page in pages %}
 
-    <a href="{% include relative-src.html src=link.link %}{{ page.url }}" class="{{ page.lang }} highlight">{{ page.lang }}</a>
+    <a href="{% include relative-src.html src=link.link %}{{ page.url }}" class="{{ page.lang }} highlight"><img src="{% include relative-src.html src=link.link %}/images/{{ page.lang }}.png"></a>
 
 {% endfor %}
 </div>
