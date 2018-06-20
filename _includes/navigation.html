@@ -28,13 +28,6 @@
 	{% endfor %}
 {% endif %}
 
-{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-{% for post in posts %}
-
-    <a href="{{ post.url }}" class="{{ post.lang }} highlight">{{ post.lang }}</a>
-
-{% endfor %}
-
 {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
 {% for page in pages %}
 
