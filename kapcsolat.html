@@ -1,10 +1,10 @@
 ---
-title: Contact
-description: Send us a message to find out more!
+title: Kapcsolat
+description: Küldj nekünk üzenetet!
 map:
-  latitude: -45.8787605
-  longitude: 170.5027976
-  address: "1 George Street, Dunedin, New Zealand"
+latitude: 46.6667097
+longitude: 17.6406557
+address: "Zrínyi Miklós u. 4, 8693 Lengyeltóti, Somogy, Hungary"
   zoom: 13
 image: images/posta.jpg
 lang: hu
@@ -14,8 +14,8 @@ ref: contact
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1 class="editable">Get in touch today</h1>
-			<p class="subtext editable">If you have any questions or queries send us a message and we'll get back to you as soon as we can.</p>
+			<h1 class="editable">Kapcsolat</h1>
+			<p class="subtext editable">Ha bármilyen kérdésed van a szállással kapcsolatban vagy egyedi árajánlatot szeretnél kérni, írj nekünk és válaszolunk amilyen gyorsan csak tudunk.</p>
 		</div>
 	</div>
 </section>
@@ -26,24 +26,24 @@ ref: contact
 			<input type="hidden" name="_to" value="support@cloudcannon.com">
 			<input type="text" name="_gotcha" style="display: none;">
 
-			<label for="name">Name</label>
+			<label for="name">Név</label>
 			<input type="text" name="name" id="name" placeholder="Enter your name...">
 
-			<label for="email">Email Address</label>
+			<label for="email">Email</label>
 			<input type="email" name="email" id="email" placeholder="Enter your email..." required>
 
-			<label for="message">Message</label>
+			<label for="message">Üzenet</label>
 			<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
 
-			<input type="submit" value="Send Message">
+			<input type="submit" value="Üzenet küldés">
 		</form>
 
 		<div class="contact-details">
-			<h3>Address</h3>
+			<h3>Cím</h3>
 			<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
 
 			<h3>Email</h3>
-			<p class="editable"><a href="mailto:support@example.com">support@example.com</a></p>
+			<p class="editable"><a href="mailto:info@servushotel.eu">info@servushotel.eu</a></p>
 		</div>
 	</div>
 </section>
