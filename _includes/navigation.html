@@ -27,12 +27,12 @@
 		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
 	{% endfor %}
 {% endif %}
-<div style="float:right">
+
 {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
 {% for page in pages %}
 
     <a href="{% include relative-src.html src=link.link %}{{ page.url }}" class="{{ page.lang }} highlight"><img src="{% include relative-src.html src=link.link %}/images/{{ page.lang }}.png"></a>
 
 {% endfor %}
-</div>
+
 </nav>
