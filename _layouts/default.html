@@ -29,7 +29,12 @@
 		<header id="mainHeader">
 			<div class="container">
 				<div class="company-name">
+					{% if page.lang == 'en' %}
 					<a href="{{ site.baseurl }}/">
+					{% endif %}
+					{% if page.lang == 'hu' %}
+					<a href="{{ site.baseurl }}/nyitolap">
+					{% endif %}
 						<span class="dark-logo"><img width="95" height="95" src="{{ site.baseurl }}/images/logo/dark.svg" alt="dark frisco logo"></span>
 						<span class="light-logo"><img width="95" height="95" src="{{ site.baseurl }}/images/logo/light.svg" alt="light frisco logo"></span>
 					</a>
