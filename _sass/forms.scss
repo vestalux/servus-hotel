@@ -26,6 +26,18 @@
 	text-shadow: none;
 }
 
+.button.bk a {
+	background: #fff;
+	border: 2px solid rgba(255, 255, 255, 1);
+	color: rgba(255,255,255,0);
+}
+
+.button.bk a:hover {
+	background: $brand-color;
+	color: #fff;
+	text-shadow: none;
+}
+
 textarea, input, button, select { font-family: inherit; font-size: inherit; }
 
 input[type=submit] {
