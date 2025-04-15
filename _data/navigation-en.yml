@@ -1,5 +1,3 @@
-- name: Guesthouses
-  link: /guesthouse/
 - name: Rooms
   link: /rooms/
 - name: Surroundings
